@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device,initial-scale=1.0">
+ <title>Form Validation</title>
+ <link rel="stylesheet" href="style.css">
+ <link href="https://cdnjs.com/libraries/font-awesome">
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h2>Create Account</h2>
+</div>
+<form class="form" id="form">
+<div class="form-control">
+<label>Username</label>
+<input type="text" placeholder="Frontend Forever" id="username">
+ <i class="fas fa-check-circle"></i>
+ <i class="fas fa-exclamation-circle"></i>
+ <small>Error Message</small>
+</div>
+
+<div class="form-control">
+<label>Email</label>
+<input type="email" placeholder="ff@gmail.com" id="email">
+ <i class="fa-regular fa-circle-check"></i>
+ <i class="fa-regular fa-circle-exclamation"></i>
+  <small>Error Message</small>
+</div>
+
+<div class="form-control">
+<label>Password</label>
+<input type="text" placeholder="Password" id="Password">
+ <i class="fa-regular fa-circle-check"></i>
+ <i class="fa-regular fa-circle-exclamation"></i>
+ <small>Error Message</small>
+</div>
+
+<div class="form-control">
+<label>Confrim Password</label>
+<input type="text" placeholder="Confrim Password" id="Password2">
+ <i class="fa-regular fa-circle-check"></i>
+ <i class="fa-regular fa-circle-exclamation"></i>
+ <small>Error Message</small>
+</div>
+
+<button>Submit</button>
+<a href="pic.html"></a>
+
+</form>
+</div>
+
+<script>
+const form= document.getElementById("form");
+const Username= document.getElementById("username");
+const email= document.getElementById("email");
+const Password= document.getElementById("password");
+const Password2= document.getElementById("Password2");
+
+form.addEventListener('submit',e=>)
+{
+e.preventDefault();
+checkInput();
+});
+
+function chckInput()
+{
+const Username = username.value.trim();
+const email =email.value.trim();
+const Password = password.value.trim();
+const Password2 = password2.value.trim();
+
+if(usernameValue === ' ')
+{
+setError(username, 'Username Cannot Be Blank')
+}
+else
+{
+setSuccess(username);
+}
+if(emailValue === ' ')
+{
+setError(email, 'Email Cannot Be Blank')
+}
+else if(!isEmail(emailValue))
+{
+setError(email, 'Not a valid Email')
+}
+else
+{
+setSuccess(email);
+}
+}
+function isEmail(email)
+{
+return 
+}
+}
+
+if(passwordValue === ' ')
+{
+setError(password, 'Password Cannot Be Blank')
+}
+else
+{
+setSuccess(Password);
+}
+
+if(password2Value === ' ')
+{
+setError(password, 'password Cannot Be Blank')
+}
+else if(passwordValue! == password2Value)
+{
+setError(Password2, 'Password Does Not Match ')
+else
+{
+setSuccess(Paaword);
+}
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
